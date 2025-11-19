@@ -18,7 +18,7 @@
   text-align: center;
   transition: transform 0.2s;
   margin: 40px;
-  border: #63b3d8 10px solid;
+  border: #f19797 10px solid;
 }
 .card:hover {
   transform: scale(1.05);

@@ -13,7 +13,7 @@ function NavbarUsuario() {
   const cerrarsesion = async () => {
     try {
       await signOut(auth);
-      navigate("/intro");
+      navigate("/portada");
     } catch (error) {
       console.error("Error cerrando sesión:", error);
     }
@@ -24,7 +24,7 @@ function NavbarUsuario() {
       <div className="nav-inner">
         <div className="logito">
           <div className="logo"></div> {/* Logo en CSS */}
-          <span className="titulo">Mundo Floral</span>
+          <span className="titulo">Happy Tails</span>
           <div
             className={`menu-icon ${menuActivo ? "activo" : ""}`}
             onClick={toggleMenu}
@@ -36,10 +36,11 @@ function NavbarUsuario() {
         </div>
         <ul className={`nav-links ${menuActivo ? "activo" : ""}`}>
           <li><Link to="/portada">Inicio</Link></li>
-          <li><Link to="/caracteristicas">Caracteristicas</Link></li>
-          <li><Link to="/tipos">Tipos</Link></li>
+          <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
+          <li><Link to="/Mascotas">Mascotas</Link></li>
+          <li><Link to="/Cuidados">Cuidados</Link></li>
+          <li><Link to="/Contactos">Contacto</Link></li>
           <li><Link to="/comunidad">Comunidad</Link></li>
-          <li><Link to="/Registrarse">Registrarse</Link></li>
           <li><button onClick={cerrarsesion}>Cerrar sesión</button></li>
         </ul>
       </div>

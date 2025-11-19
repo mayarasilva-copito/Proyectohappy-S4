@@ -4,7 +4,7 @@ import './footer.css';
   return (
     <>
       <footer className="mi-footer">
-        <p>© 2025 Happy Tails. Todos los derechos reservados.</p>
+        <p className='footer'>© 2025 Happy Tails. Todos los derechos reservados.</p>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Facebook" />

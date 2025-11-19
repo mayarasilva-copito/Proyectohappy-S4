@@ -24,7 +24,7 @@ function Login({ onLogin }) {
         const user = userCredential.user;
         console.log("Se inicio sesion");
         // onLogin(user);
-        navigate("/intro");
+        navigate("/portada");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -43,7 +43,7 @@ function Login({ onLogin }) {
         const user = result.user;
         console.log("Iniciaste sesion con Google");
         // onLogin(user);
-        navigate("/intro");
+        navigate("/portada");
       })
       .catch((error) => {
         const errorCode = error.code;

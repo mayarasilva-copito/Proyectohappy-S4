@@ -1,0 +1,77 @@
+{
+  "cuidadosPerro": [
+    { 
+      "titulo": "Alimentación", 
+      "descripcion": "Dale comida de calidad adecuada a su edad y tamaño para que crezca sano y tenga energía.", 
+      "icono": "./comida.jpg" 
+    },
+    { 
+      "titulo": "Ejercicio", 
+      "descripcion": "Sácalo a pasear todos los días para que libere energía, mantenga su peso y esté feliz.", 
+      "icono": "./paseo.jpg" 
+    },
+    { 
+      "titulo": "Baños", 
+      "descripcion": "Báñalo y cepíllalo regularmente para mantener su pelaje limpio y libre de suciedad.", 
+      "icono": "./baño.jpg" 
+    },
+    { 
+      "titulo": "Vacunas", 
+      "descripcion": "Llévalo al veterinario para mantener sus vacunas y desparasitaciones al día.", 
+      "icono": "./vacuna.jpg" 
+    },
+    { 
+      "titulo": "Cariño", 
+      "descripcion": "Dale tiempo, juegos y caricias para fortalecer su confianza y bienestar emocional.", 
+      "icono": "./cariño.jpg" 
+    },
+    { 
+      "titulo": "Hidratación", 
+      "descripcion": "Asegúrate de que siempre tenga agua fresca para mantenerse hidratado y saludable.", 
+      "icono": "./agua.jpg" 
+    },
+    { 
+      "titulo": "Socialización", 
+      "descripcion": "Permítele convivir con personas y perros para mejorar su comportamiento y seguridad.", 
+      "icono": "./soli.jpg" 
+    }
+  ],
+
+  "cuidadosGato": [
+    { 
+      "titulo": "Alimentación", 
+      "descripcion": "Dale comida especial para gatos, rica en proteínas y adecuada para su edad.", 
+      "icono": "./comida.jpg" 
+    },
+    { 
+      "titulo": "Caja de arena", 
+      "descripcion": "Limpia su arenero a diario para evitar olores y mantener su bienestar.", 
+      "icono": "./arena.jpg" 
+    },
+    { 
+      "titulo": "Juegos", 
+      "descripcion": "Ofrécele juguetes para estimular su mente y activar su instinto cazador.", 
+      "icono": "./juguete.jpg" 
+    },
+    { 
+      "titulo": "Veterinario", 
+      "descripcion": "Haz controles periódicos para mantener sus vacunas y detectar problemas a tiempo.", 
+      "icono": "./veterinaria.jpg" 
+    },
+    { 
+      "titulo": "Cepillado", 
+      "descripcion": "Cepilla su pelaje para evitar bolas de pelo y mantenerlo suave y sano.", 
+      "icono": "./uñas.jpg" 
+    },
+    { 
+      "titulo": "Hidratación", 
+      "descripcion": "Asegura que tenga agua fresca siempre, ya que suelen beber muy poco.", 
+      "icono": "./agua.jpg" 
+    },
+    { 
+      "titulo": "Cariño", 
+      "descripcion": "Dale amor pero respeta su espacio, ya que los gatos son más independientes.", 
+      "icono": "./espacio.jpg" 
+    }
+  ]
+}

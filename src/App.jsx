@@ -7,11 +7,14 @@ import Footer from "./components/footer";
 import Tipos from "./components/tipos";
 import LoginNuevo from "./components/LoginNuevo";
 import Comunidad from "./components/comunidad";
-import FloreriaSection from "./components/floreriaSection";
 import RutaPrivada from "./components/rutaprivada";
 import Formulario from "./components/Formulario";
 import RegistroNuevo from "./components/RegistroNuevo";
 import Portada from "./components/portada";
+import Quienessomos from "./components/quienessomos";
+import Listademascotas from "./components/mascotas";
+import Contactos from "./components/contactos";
+import Cuidados from "./components/cuidados";
 
 function App() {
   return (
@@ -27,9 +30,10 @@ function App() {
             </>
           }
         />
-
-        <Route path="/caracteristicas" element={<Caracteristicas />} />
-        <Route path="/tipos" element={<Tipos />} />
+        <Route path="/quienessomos" element={<Quienessomos/>} />
+        <Route path="/mascotas" element={<Listademascotas />} />
+        <Route path="/cuidados" element={<Cuidados/>} />
+        <Route path="/contactos" element={<Contactos/>} />
 
         {/* LOGIN Y REGISTRO */}
         <Route path="/iniciar-sesion" element={<LoginNuevo />} />

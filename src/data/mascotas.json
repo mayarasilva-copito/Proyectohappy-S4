@@ -1,0 +1,148 @@
+{
+    "Listademascotas": [
+     {
+      "id": 1,
+      "nombre": "Firulais",
+      "edad": "2 años",
+      "genero": "Macho",
+      "mascota": "Perro grande",
+      "imagen": "perro1.jpg",
+      "descripcion": "Es alegre, protector y le encanta correr en el parque."
+    },
+    {
+      "id": 2,
+      "nombre": "Luna",
+      "edad": "3 años",
+      "genero": "Hembra",
+      "mascota": "Perro grande",
+      "imagen": "perro2.jpg",
+      "descripcion": "Cariñosa, tranquila y disfruta de los paseos largos."
+    },
+    {
+      "id": 3,
+      "nombre": "Rocky",
+      "edad": "4 años",
+      "genero": "Macho",
+      "mascota": "Perro grande",
+      "imagen": "perro3.jpg",
+      "descripcion": "Leal, fuerte y siempre atento a su familia humana."
+    },
+    {
+      "id": 4,
+      "nombre": "Nina",
+      "edad": "8 meses",
+      "genero": "Hembra",
+      "mascota": "Perro pequeño",
+      "imagen": "perrito1.jpg",
+      "descripcion": "Juguetona, dulce y le gusta dormir en brazos."
+    },
+    {
+      "id": 5,
+      "nombre": "Max",
+      "edad": "1 año",
+      "genero": "Macho",
+      "mascota": "Perro pequeño",
+      "imagen": "perrito2.jpg",
+      "descripcion": "Curioso, simpático y muy inteligente para su edad."
+    },
+    {
+      "id": 6,
+      "nombre": "Maya",
+      "edad": "10 meses",
+      "genero": "Hembra",
+      "mascota": "Perro pequeño",
+      "imagen": "perrito3.jpg",
+      "descripcion": "Adora los mimos y corre feliz detrás de su pelota."
+    },
+    {
+      "id": 7,
+      "nombre": "Toby",
+      "edad": "1 año y medio",
+      "genero": "Macho",
+      "mascota": "Perro pequeño",
+      "imagen": "perrito4.jpg",
+      "descripcion": "Sociable, travieso y siempre busca nuevas aventuras."
+    },
+    {
+      "id": 8,
+      "nombre": "Kira",
+      "edad": "6 meses",
+      "genero": "Hembra",
+      "mascota": "Perro pequeño",
+      "imagen": "perrito5.jpg",
+      "descripcion": "Tierna, obediente y le encanta estar acompañada."
+    },
+    {
+      "id": 9,
+      "nombre": "Michi",
+      "edad": "2 años",
+      "genero": "Macho",
+      "mascota": "Gato grande",
+      "imagen": "gato1.jpg",
+      "descripcion": "Sereno, observador y muy limpio con su espacio."
+    },
+    {
+      "id": 10,
+      "nombre": "Nube",
+      "edad": "3 años",
+      "genero": "Hembra",
+      "mascota": "Gato grande",
+      "imagen": "gato2.jpg",
+      "descripcion": "Suave, mimosa y ama descansar cerca del sol."
+    },
+    {
+      "id": 11,
+      "nombre": "Tommy",
+      "edad": "4 años",
+      "genero": "Macho",
+      "mascota": "Gato grande",
+      "imagen": "gato3.jpg",
+      "descripcion": "Independiente, elegante y muy tranquilo en casa."
+    },
+    {
+      "id": 12,
+      "nombre": "Cleo",
+      "edad": "5 años",
+      "genero": "Hembra",
+      "mascota": "Gato grande",
+      "imagen": "gato4.jpg",
+      "descripcion": "Disfruta de las alturas y es una excelente cazadora."
+    },
+    {
+      "id": 13,
+      "nombre": "Milo",
+      "edad": "5 meses",
+      "genero": "Macho",
+      "mascota": "Gato pequeño",
+      "imagen": "gatito1.jpg",
+      "descripcion": "Curioso, rápido y siempre quiere explorar rincones."
+    },
+    {
+      "id": 14,
+      "nombre": "Lola",
+      "edad": "6 meses",
+      "genero": "Hembra",
+      "mascota": "Gato pequeño",
+      "imagen": "gatito2.jpg",
+      "descripcion": "Amorosa, activa y le gusta jugar con pelotitas."
+    },
+    {
+      "id": 15,
+      "nombre": "Simba",
+      "edad": "7 meses",
+      "genero": "Macho",
+      "mascota": "Gato pequeño",
+      "imagen": "gatito3.jpg",
+      "descripcion": "Es valiente, curioso y siempre busca nuevas aventuras."
+    },
+    {
+      "id": 16,
+      "nombre": "Nina",
+      "edad": "8 meses",
+      "genero": "Hembra",
+      "mascota": "Gato pequeño",
+      "imagen": "gatito4.jpg",
+      "descripcion": "Dulce, juguetona y disfruta dormir sobre cojines suaves."
+    }
+  ]
+}

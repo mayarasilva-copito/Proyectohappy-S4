@@ -1,0 +1,84 @@
+.contenedor-cuidados {
+  font-family: "Poppins", sans-serif;
+  width: 95%;
+  max-width: 1400px; 
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: #333;
+}
+
+.titulo-general {
+  text-align: center;
+  font-size: 3rem;
+  color: #e68484;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  border: 4px solid #f19797;
+  border-radius: 25px;
+  background-color: #fff0f0;
+  display: inline-block;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #f19797;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: 3px solid #f19797;
+  margin-bottom: 2rem;
+}
+
+.cuidados-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2.5rem; 
+}
+
+.cuidados-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 22px;
+  border-top: 7px solid #f19797;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 320px; 
+}
+
+.cuidados-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cuidados-card h3 {
+  color: #f19797;
+  margin: 0.7rem 0;
+  font-size: 1.3rem;
+}
+
+.cuidados-card p {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.icono-abajo {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 0.8rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f19797;
+}
+
+.icono-abajo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
