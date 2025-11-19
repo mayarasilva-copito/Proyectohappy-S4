@@ -1,9 +1,35 @@
-.footer {
-  background-color: #0288d1;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  color: rgb(0, 0, 0);
+.mi-footer {
+  background-color: #f19797; /* color rosa melón */
+  color: #000;
+  display: flex;
+  justify-content: space-between; /* texto a la izquierda, iconos a la derecha */
+  align-items: center;
+  padding: 20px 50px;
+  border-top: 3px solid #eb7563;
+  font-size: 1.6rem;
+  /* position: fixed;  <-- quitado */
+  /* bottom: 0;        <-- quitado */
+  left: 0;
+  right: 0;
+  /* ahora se comporta como un footer normal, no se queda estático */
+}
+
+.mi-footer p {
+  margin: 0;
+}
+
+.mi-footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.mi-footer .social-icons a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.mi-footer .social-icons a img:hover {
+  transform: scale(1.2);
 }

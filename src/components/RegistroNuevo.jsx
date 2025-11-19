@@ -7,22 +7,31 @@ import {
 } from "firebase/auth";
 import "./resgistrar.css";
 
-function RegistroUsuario({ onRegister, cambiarVista }) {
+function RegistroNuevo ({ onRegister, cambiarVista }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const provider = new GoogleAuthProvider();
 
   const registrar = async () => {
+    if (!email || !password) {
+      alert("Completa todos los campos");
+      return;
+    }
+    if (password.length < 6) {
+      alert("La contraseña debe tener mínimo 6 caracteres");
+      return;
+    }
+
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         console.log("Cuenta creada con éxito");
-        onRegister(user);
+        onRegister && onRegister(user);
       })
       .catch((error) => {
-        console.log("Error al registrar el usuario");
-        console.log(error.code, error.message);
+        console.log("Error al registrar el usuario", error.code);
+        alert("Error: " + error.message);
       });
   };
 
@@ -32,11 +41,11 @@ function RegistroUsuario({ onRegister, cambiarVista }) {
       .then((result) => {
         const user = result.user;
         console.log("Cuenta creada con Google");
-        onRegister(user);
+        onRegister && onRegister(user);
       })
       .catch((error) => {
-        console.log("Error al registrar con Google");
-        console.log(error.code, error.message);
+        console.log("Error al registrar con Google", error.code);
+        alert("Error: " + error.message);
       });
   };
 
@@ -44,22 +53,27 @@ function RegistroUsuario({ onRegister, cambiarVista }) {
     <div className="registrar-container">
       <div className="registrar-card">
         <h1>✨ Crear Cuenta</h1>
+
         <input
           type="email"
           placeholder="📧 Escribe tu Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+
         <input
           type="password"
           placeholder="🔒 Escribe tu Contraseña"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+
         <button className="btn-registrar" onClick={registrar}>
           Crear Cuenta ✨
         </button>
+
         <p>o</p>
+
         <button className="btn-google" onClick={iniciarSesionGoogle}>
           🔵 Crear cuenta con Google
         </button>
@@ -68,4 +82,4 @@ function RegistroUsuario({ onRegister, cambiarVista }) {
   );
 }
 
-export default RegistroUsuario;
+export default RegistroNuevo;

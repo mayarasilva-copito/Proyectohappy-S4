@@ -1,11 +1,8 @@
-import { Link } from "react-router-dom";
-import NavbarUsuario from "./navbarUsuario";
-import NavbarVisitante from "./navbarVisitante";
-import { useEffect, usEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import app from "../firebase";
-
-import "./header.css";
+import NavbarUsuario from "./navbarUsuario";
+import NavbarVisitante from "./navbarVisitante";
 
 function Header() {
   const [Usuario, setUsuario] = useState(null);
@@ -13,21 +10,14 @@ function Header() {
   useEffect(() => {
     const auth = getAuth(app);
 
-    const unsuscribete = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUsuario(user);
-      } else {
-        setUsuario(null);
-      }
+    const unsuscribe = onAuthStateChanged(auth, (user) => {
+      setUsuario(user || null);
     });
 
-    return () => unsuscribete();
+    return () => unsuscribe();
   }, []);
 
-  if (Usuario) {
-    return <NavbarUsuario />;
-  } else {
-    return <NavbarVisitante />;
-  }
+  return Usuario ? <NavbarUsuario /> : <NavbarVisitante />;
 }
+
 export default Header;

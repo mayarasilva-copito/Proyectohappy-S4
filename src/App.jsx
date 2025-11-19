@@ -1,53 +1,50 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import app from "./firebase";
-import { getAuth, signOut } from "firebase/auth";
 
-import Header from "./components/header";
-import Intro from "./components/intro";
+import Header from "./components/Header";
 import Caracteristicas from "./components/caracteristicas";
 import Footer from "./components/footer";
 import Tipos from "./components/tipos";
 import LoginNuevo from "./components/LoginNuevo";
-import RegistroNuevo from "./components/ResgistroNuevo";
 import Comunidad from "./components/comunidad";
 import FloreriaSection from "./components/floreriaSection";
 import RutaPrivada from "./components/rutaprivada";
+import Formulario from "./components/Formulario";
+import RegistroNuevo from "./components/RegistroNuevo";
+import Portada from "./components/portada";
 
 function App() {
-  const handleLogin = (user) => {
-    console.log("Usuario logueado:", user);
-  };
-
   return (
     <BrowserRouter>
       <Header />
 
       <Routes>
         <Route
-          path="/intro"
+          path="/Portada"
           element={
             <>
-              <Intro /> <FloreriaSection />
+              <Portada /> 
             </>
           }
         />
+
         <Route path="/caracteristicas" element={<Caracteristicas />} />
         <Route path="/tipos" element={<Tipos />} />
-        <Route path="/Comunidad" element={<Comunidad />} />
-        <Route path="/Iniciar-sesion" element={<LoginNuevo />} />
-        <Route path="/Resgistrarse" element={<RegistroNuevo />} />
+
+        {/* LOGIN Y REGISTRO */}
+        <Route path="/iniciar-sesion" element={<LoginNuevo />} />
+        <Route path="/Registrarse" element={<RegistroNuevo />} />
+
+        {/* FORMULARIO */}
+        <Route path="/formulario" element={<Formulario />} />
+
+        {/* COMUNIDAD PRIVADA */}
         <Route
           path="/comunidad"
           element={
-            <>
-              <RutaPrivada>
-                <Comunidad />
-              </RutaPrivada>
-            </>
+            <RutaPrivada>
+              <Comunidad />
+            </RutaPrivada>
           }
         />
       </Routes>

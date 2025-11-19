@@ -1,23 +1,26 @@
+
 import { initializeApp } from "firebase/app";
-//base de datos
 import { getFirestore } from "firebase/firestore";
-//autenticacion
 import { getAuth } from "firebase/auth";
 
-// Configuración de tu aplicación Firebase
+// Configuración Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyDd71rBwcbYOl19on33oFingdXhmwlUMRs",
   authDomain: "flores-firebase-17ee5.firebaseapp.com",
   projectId: "flores-firebase-17ee5",
   storageBucket: "flores-firebase-17ee5.firebasestorage.app",
   messagingSenderId: "676499704965",
-  appId: "1:676499704965:web:23456ce90099526e042dec",
-  measurementId: "G-NZ9X4668GT",
+  appId: "1:676499704965:web:28ec46e60d24dea0042dec",
+  measurementId: "G-3DTREFJRLF",
 };
 
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 
-//exportaciones
-export default app;
-export { db, getAuth };
+// Servicios
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+// Exportaciones
+export { db, auth, app };  // 👈 AGREGA APP AQUÍ
+export default app;        // 👈 VERY IMPORTANT

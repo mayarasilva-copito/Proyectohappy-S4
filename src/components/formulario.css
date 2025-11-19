@@ -1,0 +1,63 @@
+.formulario-contenedor {
+  max-width: 1200px;
+  margin: 80px auto;
+  background-color: #fff9f9;
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título del formulario */
+.formulario-contenedor h2 {
+  text-align: center;
+  color: #f19797;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Estilo de los inputs y textarea */
+.formulario-contenedor input,
+.formulario-contenedor textarea,
+.formulario-contenedor select {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border: 2px solid #f19797;
+  border-radius: 15px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario-contenedor input:focus,
+.formulario-contenedor textarea:focus,
+.formulario-contenedor select:focus {
+  border-color: #ff7b7b;
+  box-shadow: 0 0 10px rgba(241, 151, 151, 0.4);
+}
+
+/* Botón de enviar */
+.formulario-contenedor button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f19797;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-contenedor button:hover {
+  background-color: #ff7b7b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formulario-contenedor {
+    padding: 40px 20px;
+  }
+}
