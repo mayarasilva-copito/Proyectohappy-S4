@@ -35,12 +35,13 @@ function NavbarUsuario() {
           </div>
         </div>
         <ul className={`nav-links ${menuActivo ? "activo" : ""}`}>
-          <li><Link to="/portada">Inicio</Link></li>
-          <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
-          <li><Link to="/Mascotas">Mascotas</Link></li>
-          <li><Link to="/Cuidados">Cuidados</Link></li>
-          <li><Link to="/Contactos">Contacto</Link></li>
-          <li><Link to="/comunidad">Comunidad</Link></li>
+         <li><Link to="/portada">Inicio</Link></li>
+                   <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
+                   <li><Link to="/Mascotas">Mascotas</Link></li>
+                   <li><Link to="/Cuidados">Cuidados</Link></li>
+                   <li><Link to="/Contactos">Contacto</Link></li>
+                   <li><Link to="/comunidad">Comunidad</Link></li>
+                   <li><Link to="/Formulario">Formulario</Link></li>
           <li><button onClick={cerrarsesion}>Cerrar sesión</button></li>
         </ul>
       </div>

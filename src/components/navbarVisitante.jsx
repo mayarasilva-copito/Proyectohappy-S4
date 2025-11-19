@@ -26,9 +26,6 @@ function NavbarVisitante() {
           <li><Link to="/portada">Inicio</Link></li>
           <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
           <li><Link to="/Mascotas">Mascotas</Link></li>
-          <li><Link to="/Cuidados">Cuidados</Link></li>
-          <li><Link to="/Contactos">Contacto</Link></li>
-          <li><Link to="/comunidad">Comunidad</Link></li>
           <li><Link to="/Formulario">Formulario</Link></li>
           <li><Link to="/iniciar-sesion">Inicio Sesion</Link></li>
           <li><Link to="/Registrarse">Registrarse</Link></li>

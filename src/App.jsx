@@ -31,16 +31,22 @@ function App() {
           }
         />
         <Route path="/quienessomos" element={<Quienessomos/>} />
-        <Route path="/mascotas" element={<Listademascotas />} />
+        <Route path="/mascotas" element={<Listademascotas/>} />
         <Route path="/cuidados" element={<Cuidados/>} />
+        <Route
+          path="/formulario"
+          element={
+            <RutaPrivada>
+              <Formulario />
+            </RutaPrivada>
+          }
+        />
+       
         <Route path="/contactos" element={<Contactos/>} />
 
         {/* LOGIN Y REGISTRO */}
         <Route path="/iniciar-sesion" element={<LoginNuevo />} />
         <Route path="/Registrarse" element={<RegistroNuevo />} />
-
-        {/* FORMULARIO */}
-        <Route path="/formulario" element={<Formulario />} />
 
         {/* COMUNIDAD PRIVADA */}
         <Route
