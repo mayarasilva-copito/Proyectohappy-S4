@@ -29,7 +29,7 @@ h1 {
 }
 
 .bienvenida {
-  font-size: 1rem;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -90,4 +90,31 @@ button:hover {
   margin-top: 50px;
   font-size: 1.2rem;
   color: #000000;
+}
+.comunidad {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.titulo-comunidad {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ff8da7;
+  font-weight: bold;
+}
+
+.reseñas-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.reseña-card {
+  background: #fff4f7;
+  padding: 20px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(255, 176, 189, 0.4);
+  font-family: "Poppins", sans-serif;
 }

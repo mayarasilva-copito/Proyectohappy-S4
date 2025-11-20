@@ -30,26 +30,6 @@ function Quienessomos() {
                 Con esfuerzo, cariño y muchas historias felices, seguimos creciendo cada día.
                 Nuestra meta es construir una comunidad que ame, respete y proteja a los animales. 🐾💖
               </p>
-
-              <h3>💫 Nuestras historias</h3>
-
-              <p>
-                <strong>🐱 Mayara:</strong> Desde niña recogía gatitos abandonados en su barrio.
-                Hoy comparte su talento en marketing para dar visibilidad a cada rescate y mostrar
-                que cada vida cuenta.
-              </p>
-
-              <p>
-                <strong>🐶 Alexandra:</strong> Su primera experiencia fue alimentar a un perrito
-                que vivía en la puerta de su colegio. Ese pequeño gesto despertó su vocación por
-                ayudar a los animales.
-              </p>
-
-              <p>
-                <strong>🐾 Melany:</strong> Adoptó a un perrito callejero que estaba asustado y sin
-                confianza. Con paciencia y amor logró que recuperara la alegría, y desde entonces se
-                dedica a apoyar a muchos más.
-              </p>
             </div>
 
             <div className="historia-imagenes">

@@ -3,32 +3,34 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-color: #f3faff; /* Fondo general muy clarito */
+  background-color: #fffdfd; /* Fondo igual que tu web */
 }
 
 .login-card {
-  background-color: #d9f0fa; /* Fondo pastel suave */
+  background-color: #f19797; /* Rosado pastel principal */
   border-radius: 20px;
   padding: 40px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   width: 320px;
   font-family: "Poppins", sans-serif;
+  animation: aparecer 0.5s ease;
 }
 
 .login-card h1 {
   margin-bottom: 20px;
-  color: #0277bd; /* Azul medio */
+  color: #4a2d2d; /* Mismo tono marroncito que usas en historia */
   font-weight: bold;
   font-size: 22px;
 }
 
+/* INPUTS */
 input {
   display: block;
   width: 90%;
   margin: 12px auto;
   padding: 10px;
-  border: 1px solid #b0e0f5;
+  border: 1px solid #e28888; /* rosado fuerte */
   border-radius: 12px;
   font-size: 14px;
   text-align: center;
@@ -38,12 +40,12 @@ input {
 }
 
 input:focus {
-  border-color: #81d4fa;
-  box-shadow: 0 0 5px rgba(129, 212, 250, 0.6);
+  border-color: #e68c8c; /* rosado más suave */
+  box-shadow: 0 0 5px rgba(230, 140, 140, 0.6);
 }
 
-.btn-iniciar,
-.btn-google {
+/* BOTÓN INICIAR */
+.btn-iniciar {
   display: block;
   width: 100%;
   margin-top: 12px;
@@ -53,32 +55,36 @@ input:focus {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  background-color: #e28888; /* rosado oscuro */
+  color: white;
   transition: 0.3s ease;
 }
 
-.btn-iniciar {
-  background-color: #81d4fa; /* Celeste pastel */
-  color: white;
-}
-
 .btn-iniciar:hover {
-  background-color: #4fc3f7;
+  background-color: #e68c8c; /* hover */
 }
 
+/* BOTÓN GOOGLE */
 .btn-google {
-  background-color: white;
-  color: #01579b;
-  border: 1px solid #81d4fa;
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fffafa; 
+  color: #4a2d2d;
+  border: 1px solid #e28888; /* bordecito rosado */
+  transition: 0.3s ease;
 }
 
 .btn-google:hover {
-  background-color: #e1f5fe;
+  background-color: #ffeaea;
 }
 
-.login-card {
-  animation: aparecer 0.5s ease;
-}
-
+/* ANIMACIÓN */
 @keyframes aparecer {
   from {
     opacity: 0;

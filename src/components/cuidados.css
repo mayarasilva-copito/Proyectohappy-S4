@@ -1,5 +1,5 @@
 .contenedor-cuidados {
-  font-family: "Poppins", sans-serif;
+  font-family: cursive;
   width: 95%;
   max-width: 1400px; 
   margin: 3rem auto;
@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 4rem;
   color: #333;
+      font-style: italic
 }
 
 .titulo-general {
@@ -59,11 +60,11 @@
 .cuidados-card h3 {
   color: #f19797;
   margin: 0.7rem 0;
-  font-size: 1.3rem;
+  font-size: 16px;
 }
 
 .cuidados-card p {
-  font-size: 1.1rem;
+  font-size: 16px;
   line-height: 1.55;
   margin-bottom: 1rem;
 }

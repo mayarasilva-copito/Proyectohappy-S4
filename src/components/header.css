@@ -7,47 +7,47 @@
   z-index: 100;
 }
 
+/* CONTENEDOR NAV */
 .nav-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; 
 }
 
-/* Logo */
+/* LOGO + TÍTULO (juntos a la izquierda) */
 .logito {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px; /* logo y título juntitos */
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  background-image: url("../img/logo.png"); /* tu logo */
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/lobito.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 50%;
-  background-color: #fff;
-  padding: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 25px 40px;
+
 }
 
+/* TÍTULO — nueva letra y más elegante */
 .titulo {
-  font-family: "Brush Script MT", cursive;
+  font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: 700;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Links */
+/* LINKS — a la derecha del todo */
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin: 0;
+  gap: 100px;
+  margin-left: auto; /* empuja todo a la derecha */
   padding: 0;
 }
 
@@ -55,7 +55,7 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   transition: color 0.3s ease, transform 0.2s ease;
   position: relative;
 }
@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-/* Menú hamburguesa */
+/* MENÚ HAMBURGUESA */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -108,12 +108,13 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-inner {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
+    gap: 20px;
   }
 
   .logito {
@@ -122,12 +123,12 @@
   }
 
   .titulo {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
 
   .menu-icon {
@@ -146,7 +147,7 @@
     background-color: #f19797;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 20px 0;
     display: none;
     animation: slideDown 0.3s ease;

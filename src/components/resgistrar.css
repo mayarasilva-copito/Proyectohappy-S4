@@ -3,32 +3,34 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-color: #f3faff; /* Fondo muy suave */
+  background-color: #fffdfd; /* Fondo suave como tu web */
 }
 
 .registrar-card {
-  background-color: #d9f0fa; /* Mismo celeste pastel */
+  background-color: #f19797; /* Rosado pastel */
   border-radius: 20px;
   padding: 40px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   width: 320px;
   font-family: "Poppins", sans-serif;
+  animation: aparecer 0.5s ease;
 }
 
 .registrar-card h1 {
   margin-bottom: 20px;
-  color: #0277bd;
+  color: #4a2d2d; /* Marroncito suave */
   font-weight: bold;
   font-size: 22px;
 }
 
+/* INPUTS */
 input {
   display: block;
   width: 90%;
   margin: 12px auto;
   padding: 10px;
-  border: 1px solid #b0e0f5;
+  border: 1px solid #e28888; /* rosado fuerte */
   border-radius: 12px;
   font-size: 14px;
   text-align: center;
@@ -38,8 +40,8 @@ input {
 }
 
 input:focus {
-  border-color: #81d4fa;
-  box-shadow: 0 0 5px rgba(129, 212, 250, 0.6);
+  border-color: #e68c8c; /* rosado suave */
+  box-shadow: 0 0 5px rgba(230, 140, 140, 0.6);
 }
 
 .btn-registrar {
@@ -53,18 +55,15 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
-  background-color: #81d4fa;
+  background-color: #e28888; /* rosado fuerte */
   color: white;
 }
 
 .btn-registrar:hover {
-  background-color: #4fc3f7;
+  background-color: #e68c8c; /* rosado más claro */
 }
 
-.registrar-card {
-  animation: aparecer 0.5s ease;
-}
-
+/* ANIMACIÓN */
 @keyframes aparecer {
   from {
     opacity: 0;

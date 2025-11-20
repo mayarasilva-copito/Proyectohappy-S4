@@ -51,7 +51,9 @@ function Comunidad() {
   }
 
   return (
+  <>
     <div className="comunidad-container">
+      
       <h1>🌟 Bienvenido {nombre} 🌟</h1>
 
       <div className="foto-container">
@@ -92,6 +94,28 @@ function Comunidad() {
         💬 Aquí podrás interactuar con otros usuarios y compartir tus ideas.
       </p>
     </div>
+    <div className="comunidad">
+  <h2 className="titulo-comunidad">🐾 Reseñas de la Comunidad</h2>
+
+  <div className="reseñas-container">
+    <div className="reseña-card">
+      <h3>⭐ Sofía R.</h3>
+      <p>“Adopté a Luna y fue la mejor experiencia. ¡Gracias!”</p>
+    </div>
+
+    <div className="reseña-card">
+      <h3>⭐ Diego M.</h3>
+      <p>“Muy responsables y cariñosos con los animalitos.”</p>
+    </div>
+
+    <div className="reseña-card">
+      <h3>⭐ Valeria T.</h3>
+      <p>“Mi gatita Mía ahora es la reina de la casa.”</p>
+    </div>
+  </div>
+</div>
+
+    </>
   );
 }
 
