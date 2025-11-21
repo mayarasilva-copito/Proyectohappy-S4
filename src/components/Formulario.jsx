@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./formulario.css";
 import { db } from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
 function Formulario() {
   // 🧠 Datos del formulario
@@ -19,10 +25,30 @@ function Formulario() {
   // Popup de éxito
   const [mostrarPopup, setMostrarPopup] = useState(false);
 
-  // Cuando el usuario quiere editar
+  // Modo edición
   const [modoEditar, setModoEditar] = useState(false);
+  const [idEditando, setIdEditando] = useState(null);
 
-  // Manejar los cambios
+  // LISTA DE FORMULARIOS
+  const [listaFormularios, setListaFormularios] = useState([]);
+
+  // Cargar registros de Firestore
+  const cargarRegistros = async () => {
+    const querySnapshot = await getDocs(
+      collection(db, "formularios_adopcion")
+    );
+    const datos = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setListaFormularios(datos);
+  };
+
+  useEffect(() => {
+    cargarRegistros();
+  }, []);
+
+  // Manejar cambios
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -33,18 +59,36 @@ function Formulario() {
     e.preventDefault();
 
     try {
-      // Guardar en Firebase
-      await addDoc(collection(db, "formularios_adopcion"), formData);
+      // Añadir registro
+      if (!modoEditar) {
+        await addDoc(collection(db, "formularios_adopcion"), formData);
+      }
 
       setMostrarPopup(true);
       setModoEditar(false);
 
-      // Oculta popup
       setTimeout(() => setMostrarPopup(false), 4000);
+
+      // Actualizar lista
+      cargarRegistros();
     } catch (error) {
       console.error("Error al enviar formulario:", error);
       alert("Hubo un error al enviar tu solicitud ❌");
     }
+  };
+
+  // Eliminar registro
+  const eliminarRegistro = async (id) => {
+    await deleteDoc(doc(db, "formularios_adopcion", id));
+    cargarRegistros();
+  };
+
+  // Editar registro (cargar datos al form)
+  const editarRegistro = (item) => {
+    setModoEditar(true);
+    setIdEditando(item.id);
+    setFormData(item);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -176,16 +220,6 @@ function Formulario() {
             </div>
           </div>
         </form>
-
-        {/* BOTÓN PARA EDITAR */}
-        {!modoEditar && mostrarPopup && (
-          <button
-            className="btn-editar"
-            onClick={() => setModoEditar(true)}
-          >
-            ✏️ Editar Información
-          </button>
-        )}
       </div>
 
       {/* POPUP ÉXITO */}
@@ -202,6 +236,55 @@ function Formulario() {
           </div>
         </div>
       )}
+
+      {/* 📋 LISTA DE REGISTROS */}
+      <div className="lista-registros">
+        <h2>📋 Lista de Formularios Enviados</h2>
+        <button onClick={cargarRegistros} className="btn-actualizar">🔄 Actualizar</button>
+
+        {listaFormularios.length === 0 ? (
+          <p>No hay registros aún.</p>
+        ) : (
+          <table className="tabla-registros">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Tipo</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {listaFormularios.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.nombre}</td>
+                  <td>{item.email}</td>
+                  <td>{item.telefono}</td>
+                  <td>{item.tipo_mascota}</td>
+
+                  <td>
+                    <button
+                      className="btn-editar-tabla"
+                      onClick={() => editarRegistro(item)}
+                    >
+                      ✏️ Editar
+                    </button>
+
+                    <button
+                      className="btn-eliminar-tabla"
+                      onClick={() => eliminarRegistro(item.id)}
+                    >
+                      🗑️ Eliminar
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
     </>
   );
 }

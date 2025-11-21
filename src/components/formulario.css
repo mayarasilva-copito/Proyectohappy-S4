@@ -1,178 +1,149 @@
 body {
-  background-color: #f19797;
+  background-color: #f8eaea; /* más suave, combina con tu portada */
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* 🌸 Tarjeta Principal */
 .formulario-contenedor {
-  max-width: 1200px; /* más ancho */
-  margin: 80px auto;
-  background-color: #fff9f9;
-  padding: 70px;
-  border-radius: 30px;
-  box-shadow: 0 12px 40px rgba(241, 151, 151, 0.5);
+  max-width: 1100px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 35px;
+  box-shadow: 0 8px 30px rgba(234, 142, 142, 0.35);
+  animation: fadeIn 0.6s ease;
 }
 
+/* 🌸 Títulos */
 h1 {
   text-align: center;
-  color: #e47171;
-  font-size: 36px;
-  margin-bottom: 15px;
+  color: #e56f6f;
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 p {
   text-align: center;
-  color: #000000;
+  color: #333;
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
-/* 🍑 Diseño en columnas */
+/* 🐾 FORMULARIO EN DOS COLUMNAS */
 .formulario-adopcion {
   display: flex;
   flex-wrap: wrap;
-  gap: 120px; /* más separación entre columnas */
-  justify-content: space-between;
+  gap: 80px;
+  justify-content: center;
 }
 
 .columna {
   flex: 1;
-  min-width: 420px; /* más ancha */
+  min-width: 380px;
   display: flex;
   flex-direction: column;
-  gap: 45px; /* más espacio entre campos */
+  gap: 35px;
 }
 
-.campo {
-  display: flex;
-  flex-direction: column;
-}
-
+/* 🐾 Campos */
 .campo label {
   font-weight: 600;
-  color: #e47171;
-  margin-bottom: 10px;
-  font-size: 16px;
+  color: #e56f6f;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .campo input,
 .campo textarea,
 .campo select {
-  border: 1.5px solid #f5b5b5;
+  border: 1.5px solid #f5baba;
   border-radius: 14px;
-  padding: 16px;
-  font-size: 16px;
-  transition: 0.3s;
-  background-color: #fff2f2;
+  padding: 14px;
+  font-size: 15px;
+  background-color: #fff4f4;
+  transition: 0.3s ease;
 }
 
+/* 🌼 Enfoque bonito */
 .campo input:focus,
 .campo textarea:focus,
 .campo select:focus {
-  border-color: #e47171;
+  border-color: #e56f6f;
   outline: none;
-  box-shadow: 0 0 12px rgba(228, 113, 113, 0.4);
+  background-color: #ffeaea;
+  box-shadow: 0 0 12px rgba(228, 113, 113, 0.3);
 }
 
+/* 🐶 Grupo de radios */
 .radio-group {
   display: flex;
-  gap: 40px;
-  margin-top: 12px;
-  color: #444;
+  gap: 30px;
+  margin-top: 10px;
+  color: #555;
 }
 
+/* ❤️ Botón */
 button {
-  background-color: #e47171;
+  background-color: #e56f6f;
   color: white;
-  padding: 16px;
+  padding: 15px;
   border: none;
   border-radius: 14px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 18px;
-  transition:
-    background 0.3s,
-    transform 0.2s;
+  font-size: 17px;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #cc5a5a;
-  transform: scale(1.06);
+  background-color: #cf5a5a;
+  transform: scale(1.05);
 }
 
-/* 📱 Responsivo */
+/* 📱 RESPONSIVE */
 @media (max-width: 768px) {
   .formulario-adopcion {
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
   }
 
   .columna {
     min-width: 100%;
-    gap: 30px;
   }
 
   h1 {
     font-size: 28px;
   }
-
-  p {
-    font-size: 16px;
-  }
 }
 
-.mensaje-exito {
-  text-align: center;
-  background-color: #fff;
-  border: 2px solid #f19797;
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.icono-exito {
-  width: 80px;
-  margin-bottom: 15px;
-  animation: aparecer 0.6s ease-in-out;
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/* 🌟 Fondo del popup */
+/* 🎉 POPUP */
 .popup-fondo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
 }
 
-/* 🌟 Caja del popup */
 .popup-exito {
   background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 20px;
+  padding: 35px 45px;
+  border-radius: 22px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
   animation: aparecer 0.5s ease;
 }
 
 .icono-exito {
-  width: 90px;
+  width: 85px;
   margin-bottom: 15px;
 }
 
@@ -182,17 +153,145 @@ button:hover {
 }
 
 .popup-exito p {
-  color: black;
+  color: #444;
 }
 
-/* ✨ Animación suave */
+/* ✨ Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes aparecer {
   from {
-    transform: scale(0.8);
+    transform: scale(0.85);
     opacity: 0;
   }
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+/* 🌸 Contenedor lista */
+.lista-registros {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 6px 25px rgba(234, 142, 142, 0.25);
+  animation: fadeIn 0.6s ease;
+}
+
+/* 🌸 Título lista */
+.lista-registros h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #e56f6f;
+  margin-bottom: 25px;
+}
+
+/* 🔄 Botón actualizar */
+.btn-actualizar {
+  background-color: #f5baba;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.btn-actualizar:hover {
+  background-color: #e56f6f;
+  transform: scale(1.05);
+}
+
+/* 📋 TABLA */
+.tabla-registros {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff4f4;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tabla-registros thead {
+  background-color: #f5baba;
+  color: white;
+}
+
+.tabla-registros th,
+.tabla-registros td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ffdada;
+  font-size: 15px;
+}
+
+/* Quitar última línea */
+.tabla-registros tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover filas */
+.tabla-registros tbody tr:hover {
+  background: #ffecec;
+  transition: 0.3s ease;
+}
+
+/* ✏️ Botón editar */
+.btn-editar-tabla {
+  background-color: #6fa8e5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-editar-tabla:hover {
+  background-color: #4e8cd4;
+  transform: scale(1.05);
+}
+
+/* 🗑️ Botón eliminar */
+.btn-eliminar-tabla {
+  background-color: #e56f6f;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-eliminar-tabla:hover {
+  background-color: #cf5a5a;
+  transform: scale(1.05);
+}
+
+/* 📱 RESPONSIVE TABLA */
+@media (max-width: 768px) {
+  .tabla-registros th,
+  .tabla-registros td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .btn-editar-tabla,
+  .btn-eliminar-tabla {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 }

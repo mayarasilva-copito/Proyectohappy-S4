@@ -68,10 +68,10 @@ h3 {
 }
 
 .home .content p {
-  font-size: 1.7rem;
+  font-size: 16px;
   color: rgb(2, 7, 3);
   padding: 1rem 0;
-  line-height: 1.5;
+  line-height: 1.9;
 }
 
 .bootstrap-grid div {
@@ -315,10 +315,13 @@ h1 {
 }
 
 .imagenprincipal img {
-  width: 100%;
+  width: 450px;      /* Tamaño ideal */
   height: auto;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;    /* Centrada */
 }
+
 
 .text-container {
   flex: 2;
@@ -327,12 +330,12 @@ h1 {
 }
 
 .about {
-  min-height: 100vh; /* mínimo igual a la pantalla */
+  min-height: 75vh; /* mínimo igual a la pantalla */
   background-image: url('...');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 20px;
+  padding: 35px;
 }
 .content {
   background-color: rgba(255, 246, 246, 0.932);
@@ -411,8 +414,8 @@ h1.text-center {
 }
 
 .hero-content p {
-  font-size: 1.7rem;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .mi-footer p {
@@ -433,4 +436,29 @@ h1.text-center {
 .text-container h3,
 .text-container p {
   color: black; /* letra negra */
+}
+/* Contenedor general del texto */
+.seccion-dedicamos {
+  max-width: 900px;      /* Hace que no se vea tan extendido */
+  margin: 0 auto;        /* Centra todo */
+  padding: 20px;
+  text-align: justify;   /* Ajusta el texto bonito */
+}
+
+/* Título ¡A Qué Nos Dedicamos! */
+.seccion-dedicamos h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Texto (párrafo) */
+.seccion-dedicamos p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
 }
