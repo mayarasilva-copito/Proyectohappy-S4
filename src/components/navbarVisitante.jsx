@@ -27,7 +27,7 @@ function NavbarVisitante() {
           </div>
 
           <ul className={`vis-nav-links ${menuActivo ? "vis-activo" : ""}`}>
-            <li><Link to="/portada">Inicio</Link></li>
+            <br />
             <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
             <li><Link to="/Mascotas">Mascotas</Link></li>
             <li><Link to="/Formulario">Formulario</Link></li>

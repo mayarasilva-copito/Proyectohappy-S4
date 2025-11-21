@@ -39,7 +39,8 @@ function NavbarUsuario() {
           </div>
 
           <ul className={`usr-nav-links ${menuActivo ? "usr-activo" : ""}`}>
-            <li><Link to="/portada">Inicio</Link></li>
+            <br />
+
             <li><Link to="/Quienessomos">Quienes Somos??</Link></li>
             <li><Link to="/Mascotas">Mascotas</Link></li>
             <li><Link to="/Cuidados">Cuidados</Link></li>
