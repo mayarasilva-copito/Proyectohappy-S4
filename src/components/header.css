@@ -1,4 +1,8 @@
-.nav-header {
+/* ------------------------------------------------------ */
+/* ------------------ NAVBAR USUARIO -------------------- */
+/* ------------------------------------------------------ */
+
+.usr-nav-header {
   background-color: #f19797;
   padding: 14px 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -8,32 +12,30 @@
 }
 
 /* CONTENEDOR NAV */
-.nav-inner {
+.usr-nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between; 
 }
 
-/* LOGO + TÍTULO (juntos a la izquierda) */
-.logito {
+/* LOGO + TÍTULO */
+.usr-logito {
   display: flex;
   align-items: center;
-  gap: 10px; /* logo y título juntitos */
+  gap: 10px;
 }
 
-.logo {
+.usr-logo {
   width: 90px;
   height: 90px;
   background-image: url("../img/lobito.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-    padding: 25px 40px;
-
+  padding: 25px 40px;
 }
 
-/* TÍTULO — nueva letra y más elegante */
-.titulo {
+.usr-titulo {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 30px;
@@ -41,17 +43,17 @@
   letter-spacing: 1px;
 }
 
-/* LINKS — a la derecha del todo */
-.nav-links {
+/* LINKS */
+.usr-nav-links {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 100px;
-  margin-left: auto; /* empuja todo a la derecha */
+  margin-left: auto;
   padding: 0;
 }
 
-.nav-links a {
+.usr-nav-links a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
@@ -60,7 +62,7 @@
   position: relative;
 }
 
-.nav-links a::after {
+.usr-nav-links a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -71,17 +73,17 @@
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover {
+.usr-nav-links a:hover {
   color: #ffe8e8;
   transform: translateY(-2px);
 }
 
-.nav-links a:hover::after {
+.usr-nav-links a:hover::after {
   width: 100%;
 }
 
 /* MENÚ HAMBURGUESA */
-.menu-icon {
+.usr-menu-icon {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +92,7 @@
   transition: all 0.3s ease;
 }
 
-.menu-icon .barra {
+.usr-menu-icon .usr-barra {
   width: 25px;
   height: 3px;
   background-color: white;
@@ -98,40 +100,40 @@
   transition: all 0.3s ease;
 }
 
-.menu-icon.activo .barra:nth-child(1) {
+.usr-menu-icon.usr-activo .usr-barra:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.menu-icon.activo .barra:nth-child(2) {
+.usr-menu-icon.usr-activo .usr-barra:nth-child(2) {
   opacity: 0;
 }
-.menu-icon.activo .barra:nth-child(3) {
+.usr-menu-icon.usr-activo .usr-barra:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .nav-inner {
+  .usr-nav-inner {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
     gap: 20px;
   }
 
-  .logito {
+  .usr-logito {
     justify-content: space-between;
     width: 100%;
   }
 
-  .titulo {
+  .usr-titulo {
     font-size: 24px;
   }
 
-  .logo {
+  .usr-logo {
     width: 55px;
     height: 55px;
   }
 
-  .menu-icon {
+  .usr-menu-icon {
     display: flex;
     position: absolute;
     top: 20px;
@@ -139,7 +141,7 @@
     z-index: 300;
   }
 
-  .nav-links {
+  .usr-nav-links {
     position: absolute;
     top: 80px;
     right: 0;
@@ -153,15 +155,345 @@
     animation: slideDown 0.3s ease;
   }
 
-  .nav-links.activo {
+  .usr-nav-links.usr-activo {
     display: flex;
   }
 
-  .nav-links a {
+  .usr-nav-links a {
     font-size: 18px;
   }
 }
+/* ------------------------------------------------------ */
+/* ----------------- NAVBAR VISITANTE ------------------- */
+/* ------------------------------------------------------ */
 
+.vis-nav-header {
+  background-color: #f19797;
+  padding: 14px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* CONTENEDOR NAV */
+.vis-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+
+/* LOGO + TÍTULO */
+.vis-logito {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vis-logo {
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/lobito.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 40px;
+}
+
+.vis-titulo {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* LINKS */
+.vis-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.vis-nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.vis-nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.vis-nav-links a:hover {
+  color: #ffe8e8;
+  transform: translateY(-2px);
+}
+
+.vis-nav-links a:hover::after {
+  width: 100%;
+}
+
+/* MENÚ HAMBURGUESA */
+.vis-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.vis-menu-icon .vis-barra {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.vis-menu-icon.vis-activo .vis-barra:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.vis-menu-icon.vis-activo .vis-barra:nth-child(2) {
+  opacity: 0;
+}
+.vis-menu-icon.vis-activo .vis-barra:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vis-nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+  }
+
+  .vis-logito {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .vis-titulo {
+    font-size: 24px;
+  }
+
+  .vis-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .vis-menu-icon {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 300;
+  }
+
+  .vis-nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #f19797;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    animation: slideDown 0.3s ease;
+  }
+
+  .vis-nav-links.vis-activo {
+    display: flex;
+  }
+
+  .vis-nav-links a {
+    font-size: 18px;
+  }
+}
+/* ------------------------------------------------------ */
+/* ----------------- NAVBAR VISITANTE ------------------- */
+/* ------------------------------------------------------ */
+
+.vis-nav-header {
+  background-color: #f19797;
+  padding: 14px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* CONTENEDOR NAV */
+.vis-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO + TÍTULO */
+.vis-logito {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vis-logo {
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/lobito.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 40px;
+}
+
+.vis-titulo {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* LINKS */
+.vis-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.vis-nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.vis-nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.vis-nav-links a:hover {
+  color: #ffe8e8;
+  transform: translateY(-2px);
+}
+
+.vis-nav-links a:hover::after {
+  width: 100%;
+}
+
+/* MENÚ HAMBURGUESA */
+.vis-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.vis-menu-icon .vis-barra {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.vis-menu-icon.vis-activo .vis-barra:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.vis-menu-icon.vis-activo .vis-barra:nth-child(2) {
+  opacity: 0;
+}
+.vis-menu-icon.vis-activo .vis-barra:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vis-nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 20px;
+  }
+
+  .vis-logito {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .vis-titulo {
+    font-size: 24px;
+  }
+
+  .vis-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .vis-menu-icon {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 300;
+  }
+
+  .vis-nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #f19797;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    animation: slideDown 0.3s ease;
+  }
+
+  .vis-nav-links.vis-activo {
+    display: flex;
+  }
+
+  .vis-nav-links a {
+    font-size: 18px;
+  }
+}
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -171,4 +503,12 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.usr-nav-links {
+  margin-left: auto !important;
+}
+
+.vis-nav-links {
+  margin-left: auto !important;
 }

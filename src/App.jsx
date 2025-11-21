@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header";
-import Caracteristicas from "./components/caracteristicas";
 import Footer from "./components/footer";
 import Tipos from "./components/tipos";
 import LoginNuevo from "./components/LoginNuevo";
