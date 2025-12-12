@@ -15,6 +15,8 @@ import Quienessomos from "./components/quienessomos";
 import Listademascotas from "./components/mascotas";
 import Contactos from "./components/contactos";
 import Cuidados from "./components/cuidados";
+import ScrollToTop from "./components/ScrollToTop";
+import Novedades from "./components/Novedades";
 
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
@@ -33,7 +35,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      
+         <ScrollToTop />
       {usuario ? <NavbarUsuario /> : <NavbarVisitante />}
 
       <Routes>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/quienessomos" element={<Quienessomos />} />
         <Route path="/mascotas" element={<Listademascotas />} />
         <Route path="/cuidados" element={<Cuidados />} />
+        <Route path="/novedades" element={<Novedades />} />
+
 
         <Route
           path="/formulario"

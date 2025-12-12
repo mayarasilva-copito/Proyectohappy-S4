@@ -1,13 +1,14 @@
 {
-    "Listademascotas": [
-     {
+  "Listademascotas": [
+    {
       "id": 1,
       "nombre": "Firulais",
       "edad": "2 años",
       "genero": "Macho",
       "mascota": "Perro grande",
       "imagen": "perro1.jpg",
-      "descripcion": "Es alegre, protector y le encanta correr en el parque."
+      "descripcion": "Es alegre, protector y le encanta correr en el parque.",
+      "historia": "Firulais fue rescatado cuando vivía cerca de un parque. Siempre acompañaba a los niños mientras jugaban y movía la cola cuando veía a alguien triste. Ahora sueña con una familia que lo lleve a correr todos los días."
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "genero": "Hembra",
       "mascota": "Perro grande",
       "imagen": "perro2.jpg",
-      "descripcion": "Cariñosa, tranquila y disfruta de los paseos largos."
+      "descripcion": "Cariñosa, tranquila y disfruta de los paseos largos.",
+      "historia": "Luna llegó al refugio una noche de lluvia. Estaba asustada, pero con un abrazo volvió a confiar. Hoy es la primera en recibir con cariño a todos los que visitan el albergue."
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "genero": "Macho",
       "mascota": "Perro grande",
       "imagen": "perro3.jpg",
-      "descripcion": "Leal, fuerte y siempre atento a su familia humana."
+      "descripcion": "Leal, fuerte y siempre atento a su familia humana.",
+      "historia": "Rocky cuidaba una casa abandonada como si fuera suya. Cuando lo rescataron, no quiso irse sin despedirse. Ahora busca un hogar donde pueda ser el guardián leal que siempre ha sido."
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "genero": "Hembra",
       "mascota": "Perro pequeño",
       "imagen": "perrito1.jpg",
-      "descripcion": "Juguetona, dulce y le gusta dormir en brazos."
+      "descripcion": "Juguetona, dulce y le gusta dormir en brazos.",
+      "historia": "Nina fue encontrada en una cajita cerca de una tienda. A pesar de su tamaño pequeño, tiene un corazón enorme y siempre quiere estar cerca de alguien para dar cariño."
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "genero": "Macho",
       "mascota": "Perro pequeño",
       "imagen": "perrito2.jpg",
-      "descripcion": "Curioso, simpático y muy inteligente para su edad."
+      "descripcion": "Curioso, simpático y muy inteligente para su edad.",
+      "historia": "Max nació en una camada de cinco hermanitos. Fue el más curioso desde bebé y siempre era el primero en aprender trucos nuevos."
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "genero": "Hembra",
       "mascota": "Perro pequeño",
       "imagen": "perrito3.jpg",
-      "descripcion": "Adora los mimos y corre feliz detrás de su pelota."
+      "descripcion": "Adora los mimos y corre feliz detrás de su pelota.",
+      "historia": "Maya tenía miedo de todo al principio, pero con paciencia y juegos fue recuperando la confianza. Ahora es la más alegre del refugio."
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "genero": "Macho",
       "mascota": "Perro pequeño",
       "imagen": "perrito4.jpg",
-      "descripcion": "Sociable, travieso y siempre busca nuevas aventuras."
+      "descripcion": "Sociable, travieso y siempre busca nuevas aventuras.",
+      "historia": "Toby apareció siguiendo a los voluntarios del refugio. Era un aventurero solitario hasta que descubrió que le encantaba estar acompañado."
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "genero": "Hembra",
       "mascota": "Perro pequeño",
       "imagen": "perrito5.jpg",
-      "descripcion": "Tierna, obediente y le encanta estar acompañada."
+      "descripcion": "Tierna, obediente y le encanta estar acompañada.",
+      "historia": "Kira fue entregada por una familia que ya no podía cuidarla. Al inicio estuvo triste, pero ahora vuelve a mover la cola cada vez que alguien la acaricia."
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "genero": "Macho",
       "mascota": "Gato grande",
       "imagen": "gato1.jpg",
-      "descripcion": "Sereno, observador y muy limpio con su espacio."
+      "descripcion": "Sereno, observador y muy limpio con su espacio.",
+      "historia": "Michi vivía en una azotea junto a otros gatos. Siempre fue el más tranquilo, observando el cielo y cuidando a los más pequeños."
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "genero": "Hembra",
       "mascota": "Gato grande",
       "imagen": "gato2.jpg",
-      "descripcion": "Suave, mimosa y ama descansar cerca del sol."
+      "descripcion": "Suave, mimosa y ama descansar cerca del sol.",
+      "historia": "Nube fue encontrada dormida dentro de una canasta de ropa. Desde ese día, ama acostarse en cualquier lugar donde haya calor."
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "genero": "Macho",
       "mascota": "Gato grande",
       "imagen": "gato3.jpg",
-      "descripcion": "Independiente, elegante y muy tranquilo en casa."
+      "descripcion": "Independiente, elegante y muy tranquilo en casa.",
+      "historia": "Tommy vivió con una adulta mayor que ya no podía cuidarlo. Aprendió a ser silencioso, cariñoso y muy educado."
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "genero": "Hembra",
       "mascota": "Gato grande",
       "imagen": "gato4.jpg",
-      "descripcion": "Disfruta de las alturas y es una excelente cazadora."
+      "descripcion": "Disfruta de las alturas y es una excelente cazadora.",
+      "historia": "Cleo fue una excelente cazadora en su antiguo barrio. Cuando llegó al refugio, demostró ser valiente pero también muy amorosa."
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "genero": "Macho",
       "mascota": "Gato pequeño",
       "imagen": "gatito1.jpg",
-      "descripcion": "Curioso, rápido y siempre quiere explorar rincones."
+      "descripcion": "Curioso, rápido y siempre quiere explorar rincones.",
+      "historia": "Milo fue encontrado explorando cajas en un mercado. Es atrevido y siempre busca nuevas aventuras."
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "genero": "Hembra",
       "mascota": "Gato pequeño",
       "imagen": "gatito2.jpg",
-      "descripcion": "Amorosa, activa y le gusta jugar con pelotitas."
+      "descripcion": "Amorosa, activa y le gusta jugar con pelotitas.",
+      "historia": "Lola fue rescatada junto a su hermana. Le encanta jugar y siempre intenta hacer nuevos amigos, humanos o animales."
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "genero": "Macho",
       "mascota": "Gato pequeño",
       "imagen": "gatito3.jpg",
-      "descripcion": "Es valiente, curioso y siempre busca nuevas aventuras."
+      "descripcion": "Es valiente, curioso y siempre busca nuevas aventuras.",
+      "historia": "Simba nació en una casa temporal y desde pequeño mostró su valentía saltando de un sofá a otro."
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "genero": "Hembra",
       "mascota": "Gato pequeño",
       "imagen": "gatito4.jpg",
-      "descripcion": "Dulce, juguetona y disfruta dormir sobre cojines suaves."
+      "descripcion": "Dulce, juguetona y disfruta dormir sobre cojines suaves.",
+      "historia": "Nina llegó al albergue envuelta en una manta suave. Desde entonces ama dormir sobre cualquier cosa acolchonada."
     }
   ]
 }

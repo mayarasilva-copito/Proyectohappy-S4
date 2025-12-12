@@ -1,0 +1,60 @@
+.nov-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.nov-banner {
+  background: #ffe4ec;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nov-banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.nov-banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.nov-cta {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff5f9e;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nov-section {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.nov-section h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.nov-list li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.nov-mini {
+  background: #fff3f8;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+}

@@ -44,6 +44,7 @@ function NavbarUsuario() {
             <li><Link to="/Quienessomos">Acerca de</Link></li>
             <li><Link to="/Mascotas">Mascotas</Link></li>
             <li><Link to="/Cuidados">Cuidados</Link></li>
+            <li><Link to="/novedades">Novedades</Link></li>
             <li><Link to="/Contactos">Contacto</Link></li>
             <li><Link to="/comunidad">Comunidad</Link></li>
             <li><Link to="/Formulario">Formulario</Link></li>
