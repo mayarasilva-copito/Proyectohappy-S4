@@ -5,15 +5,6 @@ function Novedades() {
   return (
     <div className="nov-container">
 
-      {/* Banner principal */}
-      <div className="nov-banner">
-        <h1>🐾 ¡Adopta Amor Hoy! 💖</h1>
-        <p>
-          Cada mascota merece una segunda oportunidad. Descubre nuestras campañas,
-          nuevas historias y formas de apoyar a nuestros amigos peludos.
-        </p>
-        <a href="/Mascotas" className="nov-cta">Ver Mascotas</a>
-      </div>
 
       {/* Sección de campaña */}
       <div className="nov-section">
@@ -29,14 +20,6 @@ function Novedades() {
           <li>📢 Consejos para adoptar responsablemente</li>
           <li>💌 Mensajes de nuevos dueños</li>
         </ul>
-      </div>
-
-      {/* Mini sección extra */}
-      <div className="nov-mini">
-        <h3>🐶 “Adopta, no compres”</h3>
-        <p>
-          Cuando adoptas, salvas vidas, das amor y recibes una amistad para siempre.
-        </p>
       </div>
     </div>
   );

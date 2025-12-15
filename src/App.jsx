@@ -17,6 +17,7 @@ import Contactos from "./components/contactos";
 import Cuidados from "./components/cuidados";
 import ScrollToTop from "./components/ScrollToTop";
 import Novedades from "./components/Novedades";
+import Carrusel from "./components/carrusel";
 
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
@@ -43,6 +44,17 @@ function App() {
         <Route path="/quienessomos" element={<Quienessomos />} />
         <Route path="/mascotas" element={<Listademascotas />} />
         <Route path="/cuidados" element={<Cuidados />} />
+         <Route
+  path="/Novedades"
+  element={
+    <>   
+    <Carrusel />
+    <Novedades />
+ 
+      
+    </>
+  }
+/>
         <Route path="/novedades" element={<Novedades />} />
 
 
