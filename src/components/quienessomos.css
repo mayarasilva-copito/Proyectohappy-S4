@@ -1,223 +1,210 @@
 :root {
-  --rosa-principal: #f19797; 
+  --accent: #f19797;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --line: #ececec;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #fffdfd;
-  color: #2b1d1d;
-  font-size: 17px;
-  line-height: 1.7;
-  margin: 0;
+/* ================= QUIENES SOMOS – OVERLAY SUAVE ================= */
+
+.quienes-container {
+  width: 100%;
   padding: 0;
 }
 
+/* TITULOS */
 .section-title {
+  font-size: 2.8rem;
   text-align: center;
-  font-size: 2.3rem;
-  margin-bottom: 2rem;
-  color: #2b1d1d;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  background: var(--rosa-principal);
-  margin: 0.5rem auto;
-  border-radius: 3px;
-}
-
-.quienes-container, .historia-ampliada, #mision-vision, .equipo, .cta-final {
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: auto;
+  color: #5a2d2d;
+  margin-bottom: 3rem;
 }
 
 /* ================= HISTORIA ================= */
 .historia-ampliada {
-  background-color: var(--rosa-principal);
-  border-radius: 15px;
-  padding: 4rem 2rem;
-  margin-bottom: 3rem; 
+  width: 100%;
+  padding: 5rem 8%;
+  background: rgba(241, 151, 151, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.historia-contenido {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .parrafo-historia {
-  background-color: #fff4f4;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  background: rgba(255, 255, 255, 0.35);
+  color: #3b1f1f;
+  padding: 2rem;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
 }
 
-.texto-historia {
-  flex: 1 1 500px;
-  font-size: 18px;
-  line-height: 1.8;
-  text-align: justify;
-}
-
+/* IMAGENES */
 .imagenes-historia {
-  flex: 1 1 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  gap: 1.3rem;
 }
 
 .imagenes-historia img {
-  width: 300px;
-  height: 200px;
+  width: 240px;
+  height: 170px;
+  border-radius: 24px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.imagenes-historia img:hover {
-  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 /* ================= MISION Y VISION ================= */
 .mision-vision-separadas {
+  width: 100%;
+  padding: 6rem 8%;
+  background: rgba(255, 185, 185, 0.65);
   display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
+  gap: 3.5rem;
   flex-wrap: wrap;
-  background-color: var(--rosa-principal);
-  padding: 2rem;
-  border-radius: 15px;
-  margin-bottom: 3rem; 
 }
 
 .card-mv {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
-  flex: 1 1 45%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 420px; /* MÁS GRANDES */
+  background: rgba(255, 255, 255, 0.4);
+  color: #3b1f1f;
+  padding: 3.5rem; /* MÁS AIRE */
+  border-radius: 36px;
+  font-size: 1.15rem;
 }
 
-.card-mv img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-top: 1rem;
-  border-radius: 10px;
+.card-mv h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* ================= EQUIPO ================= */
 .equipo {
-  background-color: var(--rosa-principal);
-  padding: 3rem 2rem;
-  border-radius: 15px;
-  margin-bottom: 3rem;
+  width: 100%;
+  padding: 5rem 8%;
+  background: rgba(255, 200, 200, 0.6);
 }
 
 .grid-equipo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
 }
 
 .team-card {
-  background-color: #fff4f4;
-  border-radius: 12px;
-  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.35);
+  color: #3b1f1f;
+  border-radius: 36px;
+  padding: 2.4rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
 }
 
-.team-card:hover {
-  transform: translateY(-5px);
+.team-card h4 {
+  font-size: 1.4rem;
 }
 
-.team-card .foto-miembro {
-  width: 160px;
-  height: 160px;
+.foto-miembro {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  margin: 1.2rem auto;
   object-fit: cover;
-  margin: 1rem auto;
+  border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
-.redes {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.redes a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #fff4f4;
-  color: var(--rosa-principal);
-  font-size: 20px;
-  margin: 0 0.3rem;
-  transition: transform 0.3s;
-}
-
-.redes a:hover {
-  transform: scale(1.1);
-  color: #fff;
-  background-color: #e68c8c;
-}
-
-/* ================= CTA FINAL ================= */
+/* ================= CTA ================= */
 .cta-final {
-  background-color: var(--rosa-principal);
+  width: 100%;
+  padding: 5rem 8%;
+  background: rgba(241, 151, 151, 0.65);
   text-align: center;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 4rem auto;
+}
+
+.cta-final h2 {
+  font-size: 2.4rem;
+  color: #5a2d2d;
 }
 
 .cta-final button {
-  background-color: #fff;
-  color: var(--rosa-principal);
+  margin-top: 2rem;
+  background: #eb7563;
+  color: white;
   border: none;
-  padding: 0.9rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 8px;
+  padding: 1rem 3.2rem;
+  font-size: 1.15rem;
+  border-radius: 50px;
   cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.cta-final button:hover {
-  transform: scale(1.05);
-  background-color: #f8d1cf; 
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .historia-contenido {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 900px) {
+  .imagenes-historia {
+    grid-template-columns: repeat(2, 170px);
   }
+}
 
-  .texto-historia, .imagenes-historia {
-    flex: 1 1 100%;
-  }
+/* ================= CARRUSEL HISTORIA ================= */
 
-  .mision-vision-separadas {
-    flex-direction: column;
-    gap: 2rem;
-  }
+.carrusel-historia {
+  overflow: hidden;
+  width: 500px;
+  border-radius: 30px;
+}
 
-  .card-mv {
-    flex: 1 1 100%;
-  }
+.carrusel-track {
+  display: flex;
+  width: max-content;
+  animation: moverCarrusel 25s linear infinite;
+}
 
-  .team-card .foto-miembro {
-    width: 140px;
-    height: 140px;
+.carrusel-track img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin-right: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+@keyframes moverCarrusel {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.carrusel-historia {
+  width: 100%;
+  overflow: hidden;          /* ❌ sin barra */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  cursor: grab;
+  user-select: none;
+}
+
+.carrusel-track:active {
+  cursor: grabbing;
+}
+
+.carrusel-track img {
+  width: 420px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+  flex-shrink: 0;
 }

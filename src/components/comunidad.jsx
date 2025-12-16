@@ -12,6 +12,14 @@ function Comunidad() {
 
   const [nuevoNombre, setNuevoNombre] = useState("");
   const [nuevaFoto, setNuevoFoto] = useState("");
+  const emojis = ["😍", "🐶", "🐱", "❤️", "✨", "😊", "🐾", "😀","😁","😂","😍","🥰","😊","😉","😎",
+  "😢","😭","😡","😱","😴","🤗","🤩","😇",
+  "🐶","🐕","🐱","🐈","🐾","🦴",
+  "❤️","💖","💕","💞","✨","🌈","🌟","👍","👎"];
+  const agregarEmoji = (emoji) => {
+  setNuevoTexto((prev) => prev + emoji);
+};
+
 
  
   const [reseñas, setReseñas] = useState([
@@ -186,6 +194,9 @@ function Comunidad() {
           <button className="actualizar" onClick={actualizarPerfil}>
             Actualizar Perfil
           </button>
+          <div className="perri">
+            .
+          </div>
         </div>
       </div>
 
@@ -230,18 +241,29 @@ function Comunidad() {
             ></span>
           ))}
         </div>
-
-
         <form className="formulario-resena" onSubmit={agregarResena}>
-          <h3>📝 Escribe tu reseña</h3>
-          <textarea
-            placeholder="Escribe tu reseña aquí..."
-            value={nuevoTexto}
-            onChange={(e) => setNuevoTexto(e.target.value)}
-            rows={3}
-          />
-          <button type="submit">Enviar reseña</button>
-        </form>
+  <h3>📝 Escribe tu reseña</h3>
+
+  <textarea
+    placeholder="Escribe tu reseña aquí..."
+    value={nuevoTexto}
+    onChange={(e) => setNuevoTexto(e.target.value)}
+    rows={4}
+  />
+
+  {/* EMOJIS ABAJITO */}
+  <div className="emoji-panel-abajo">
+    {emojis.map((emoji, index) => (
+      <span key={index} onClick={() => agregarEmoji(emoji)}>
+        {emoji}
+      </span>
+    ))}
+  </div>
+
+  <button type="submit">Enviar reseña</button>
+</form>
+
+
       </div>
     </div>
   );
