@@ -49,9 +49,6 @@ function App() {
   element={
     <>   
     <Carrusel />
-    <Novedades />
- 
-      
     </>
   }
 />
